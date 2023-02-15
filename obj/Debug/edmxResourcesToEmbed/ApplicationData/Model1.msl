@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SPTCModelStoreContainer" CdmEntityContainer="SPTCEntities">
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="SPTCModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="id_category" ColumnName="id_category" />
+          <ScalarProperty Name="category_name" ColumnName="category_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Providers">
+      <EntityTypeMapping TypeName="SPTCModel.Providers">
+        <MappingFragment StoreEntitySet="Providers">
+          <ScalarProperty Name="id_provider" ColumnName="id_provider" />
+          <ScalarProperty Name="provider_name" ColumnName="provider_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="SPTCModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="id_roles" ColumnName="id_roles" />
+          <ScalarProperty Name="roles_name" ColumnName="roles_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tarifs">
+      <EntityTypeMapping TypeName="SPTCModel.Tarifs">
+        <MappingFragment StoreEntitySet="Tarifs">
+          <ScalarProperty Name="id_tarifs" ColumnName="id_tarifs" />
+          <ScalarProperty Name="tarifs_name" ColumnName="tarifs_name" />
+          <ScalarProperty Name="tarifs_category" ColumnName="tarifs_category" />
+          <ScalarProperty Name="tarifs_price" ColumnName="tarifs_price" />
+          <ScalarProperty Name="tarifs_description" ColumnName="tarifs_description" />
+          <ScalarProperty Name="tarifs_photo" ColumnName="tarifs_photo" />
+          <ScalarProperty Name="tarifs_provider" ColumnName="tarifs_provider" />
+          <ScalarProperty Name="tarifs_count" ColumnName="tarifs_count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SPTCModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id_users" ColumnName="id_users" />
+          <ScalarProperty Name="users_role" ColumnName="users_role" />
+          <ScalarProperty Name="users_firstname" ColumnName="users_firstname" />
+          <ScalarProperty Name="users_lastname" ColumnName="users_lastname" />
+          <ScalarProperty Name="users_middlename" ColumnName="users_middlename" />
+          <ScalarProperty Name="users_phone" ColumnName="users_phone" />
+          <ScalarProperty Name="users_datebirth" ColumnName="users_datebirth" />
+          <ScalarProperty Name="users_mail" ColumnName="users_mail" />
+          <ScalarProperty Name="users_login" ColumnName="users_login" />
+          <ScalarProperty Name="users_password" ColumnName="users_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

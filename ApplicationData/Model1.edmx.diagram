@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6810e85520c3400098bc809660a848b1" Name="Diagram1">
+        <EntityTypeShape EntityType="SPTCModel.Category" Width="1.5" PointX="1.125" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPTCModel.Providers" Width="1.5" PointX="1.125" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPTCModel.Roles" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPTCModel.Tarifs" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPTCModel.Users" Width="1.5" PointX="4.875" PointY="2.625" IsExpanded="true" />
+        <AssociationConnector Association="SPTCModel.FK_Tarifs_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="SPTCModel.FK_Tarifs_Providers" ManuallyRouted="false" />
+        <AssociationConnector Association="SPTCModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
